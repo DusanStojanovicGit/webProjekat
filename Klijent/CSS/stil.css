@@ -1,0 +1,768 @@
+.GlavniKontejner{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    min-height: 1207px;
+    background-color:skyblue;
+    
+}
+.glavniNaslov {
+    margin-top: -20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    min-width: 50px;
+    width: 100%;
+   
+}
+
+label{
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.x{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    right: -15px;
+    top: -10px;
+    cursor: pointer;
+    
+}
+
+.levo{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: -15px;
+    top: -10px;
+    cursor: pointer;
+    
+}
+
+.h{
+    position: relative;
+    height: 20px;
+}
+
+
+
+
+.notAllowed{
+    cursor: not-allowed;
+}
+
+body{
+    margin: 0px;
+}
+
+
+.Heder{
+    display: flex;
+    justify-content: center;
+    background-color: skyblue;
+}
+
+.Dugmici{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.Prikaz{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ 
+}
+
+.DugmiciNaslov{
+    font-size: 20px;
+    color: teal;
+}
+
+
+.PrikazLevo{
+    max-width: 25%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #fdfdff;
+    color: black;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background-image: url("../Slike/PozadinaProzor.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 90%;
+    height: fit-content;
+    flex: 1;
+}
+
+
+
+.PrikazDesno{
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    /* align-items: center; */
+
+
+
+}
+
+
+
+.PrikazLevoDodajPadding{
+    padding: 14px 20px;
+}
+
+.PrikazLevoObrisiPadding{
+    padding: 0px;
+}
+
+.PrikazLevo input, .PrikazLevo select{
+    background-color: rgb(100 198 240 / 80%);
+}
+.PrikazLevo input:focus, .PrikazLevo select:focus{
+    background-color: rgb(80 170 240 / 80%);
+}
+
+
+
+option{
+    align-items: center;
+    font-size: 14px;
+}
+
+.divDugmiciKorisnik, .divDugmiciAutomobil, .divDugmiciOglas, .divDugmiciPijaca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+    max-width: 18%;
+    min-width: 120px;
+}
+
+
+
+.selectKorisnik, .selectAutomobil, .selectOglas, .selectPijaca{
+    flex: 1 0 auto;
+    max-width: 100%;
+    min-width: 50px;
+    text-align: center;
+}
+.divDugmiciKorisnikIzmeni{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divDodajKorisnikaSifra, .divDodajKorisnikaJMBG, .divDodajKorisnikaSlika, .divDodajKorisnikaImePrezime, .divDodajKorisnikaGradAdresa, .divDodajKorisnikaTelefonEmail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+} 
+
+.divDodajKorisnikaSifra, .divDodajKorisnikaIme, .divDodajKorisnikaPrezime, .divDodajKorisnikaGrad, .divDodajKorisnikaAdresa, .divDodajKorisnikaTelefon, .divDodajKorisnikaEmail, .divOglasDodajBrojSasije, .divOglasDodajPijacu{
+    min-width: 120px;
+    width: 40%;
+}
+
+.divDodajKorisnikaJMBGSifra, .divDodajKorisnikaImePrezime, .divDodajKorisnikaGradAdresa, .divDodajKorisnikaTelefonEmail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.divDodajKorisnikaGrad, .divDodajKorisnikaAdresa, .divDodajKorisnikaIme, .divDodajKorisnikaPrezime, .divDodajKorisnikaTelefon, .divDodajKorisnikaEmail{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.divFilterCena, .divFilterGodina, .divFilterMarkaModel, .divFilterKaroserijaGorivo, .divFilterKilometraza{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, select{
+  width: 100%;
+  padding: 8px 15px;
+  margin: 4px 0;
+  font-size: 14px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: rgb(230, 230, 200);
+  /* max-width: 170px; */
+}
+
+
+
+
+.btnDodajKorisnika{
+    display: flex;
+    justify-content: center;
+}
+
+.btnDodaj, .btnIzmeni, .btnNadji, .btnFiltriraj, .btnObrisi{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.btnDodaj{
+    background-color: #4CAF50;
+    align-items: center;
+}
+
+.btnDodaj:hover, .btnDodaj:focus{
+    background-color: #45a049;
+}
+
+.btnDodaj:active {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 6px #45a049;
+}
+
+.btnFiltriraj, .btnNadji{
+    background-color: #3b3bff;
+}
+
+.btnFiltriraj:hover, .btnFiltriraj:focus, .btnNadji:hover, .btnNadji:focus{
+    background-color: #1b3bdf;
+}
+
+
+
+.btnFiltriraj:active, .btnNadji:active {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 6px #1b3bdf;
+}
+
+.btnIzmeni{
+    background-color: #FCA130;
+}
+
+.btnIzmeni:hover, .btnIzmeni:focus{
+    background-color: #E7A130;
+}
+
+.btnIzmeni:active {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 6px #E7A130;
+}
+
+.btnObrisi{
+    background-color: #ee0000;
+}
+
+.btnObrisi:hover, .btnObrisi:focus{
+    background-color: #da0000;
+}
+
+.btnObrisi:active {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 6px #da0000;
+}
+
+button{
+    width: 100%;
+    background-color: #510000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+button:active {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 6px #390000;
+}
+
+button:hover, button:focus{
+    background-color: #390000;
+}
+
+.divFilterMarkaModel{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.divFilterModel, .divFilterMarka{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    min-width: 120px
+
+}
+
+.divFilterGodina{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.divFilterGodinaDo, .divFilterGodinaOd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    min-width: 120px;
+}
+
+.divFilterKaroserijaGorivo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.divFilterKaroserija, .divFilterGorivo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    min-width: 120px
+}
+
+.filterKontejner{
+    display: flex;
+    flex-direction: column;
+}
+
+.kontejnerDugmici{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lblPrikazLevoNaslov{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.divDodajKorisnikaUsername, .divKorisnikIzmeniJMBG, .divKorisnikIzmeniUsername, .divAutomobilIzmeniUsername, .divPijacaDodajUsername, .divPijacaIzmeniUsername, .divPijacaObrisiUsername, .divPijacaObrisiSifra, .divPijacaIzmeniSifra, .divPijacaDodajNaziv, .divPijacaDodajLokacija, .divPijacaSveSifra, .divPijacaSveUsername, .divPijacaDodajAdresa, .divPijacaDodajTelefon{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+    width: 40%;
+}
+
+.divKorisnikObrisiDugme, .divKorisnikIzmeniDugme, .divOglasObrisiDugmeNadji{
+    display: flex;
+    justify-content: center;
+}
+
+.divDodajKorisnikaUsernameSifra, .divOglasDodajJMBGVlasnikaSifra, .divKorisnikObrisiJMBGSifra, .divKorisnikIzmeniUsernameSifra, .divPijacaDodajAdresaTelefon, .divPijacaDodajNazivLokacija, .divPijacaObrisiUsernameSifra, .divPijacaSveUsernameSifra, .divPijacaIzmeniUsernameSifra, .divPijacaDodajUsernameSifra, .divAutomobilIzmeniUsernameSifra, .divKorisnikIzmeniJMBGSifra, .divOglasObrisiJMBGSifra, .divKorisnikIzmeniGradAdresa, .divKorisnikIzmeniTelefonEmail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.divOglasDodajSifra, .divOglasDodajJMBGVlasnika, .divKorisnikObrisiJMBG,.divKorisnikObrisiSifra, .divLabelaIzmena, .divPijacaDodajSifra, .divAutomobilIzmeniSifra, .divKorisnikIzmeniSifra, .divOglasObrisiJMBG, .divOglasObrisiSifra, .divKorisnikIzmeniJMBG, .divKorisnikIzmeniGrad, .divKorisnikIzmeniAdresa, .divKorisnikIzmeniTelefon, .divKorisnikIzmeniEmail{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+    width: 40%;
+  
+}
+
+.divOglasObrisiDugmePrijaviSe{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divLabelaIzmena{
+    margin: 10px;
+}
+
+.btnKorisnikIzmeni{
+    display: flex;
+    justify-content: center;
+}
+
+.divKOglasIzmeniSifra, .divOglasIzmeniJMBG, .divKorisnikZaboravljenaSifraJMBG, .divKorisnikZaboravljenaUsername, .divKorisnikZaboravljenaSifraPrezime, .divKorisnikZaboravljenaSifraIme, .divKorisnikZaboravljenaSifraAdresa, .divKorisnikZaboravljenaSifraGrad, .divKorisnikZaboravljenaSifraEmail, .divKorisnikZaboravljenaSifraTelefon, .divAutomobilDodajMarka, .divAutomobilDodajModel, .divAutomobilDodajGodiste, .divAutomobilDodajKilometraza, .divAutomobilDodajKaroserija, .divAutomobilDodajGorivo, .divAutomobilDodajKubikaza, .divAutomobilDodajSnaga, .divAutomobilDodajJMBGVlasnika, .divAutomobilDodajPijaca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    min-width: 120px;
+}
+
+.divAutomobilDodajBrojSasije, .divOglasDodajPrijaviSeDugme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divOglasIzmeniDugmePrijaviSe, .divKorisnikZaboravljenaSifraDugme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divOglasDodajBrojSasijePijaca, .divKorisnikZaboravljenaSifraTelefonEmail, .divKorisnikZaboravljenaSifraGradAdresa, .divKorisnikZaboravljenaSifraImePrezime, .divKorisnikZaboravljenaSifraJMBGUsername, .divAutomobilDodajMarkaModel, .divAutomobilDodajGodisteKilometraza, .divAutomobilDodajKaroserijaGorivo, .divAutomobilDodajKubikazaSnaga, .divAutomobilDodajJMBGVlasnikaPijaca{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* .inputOglasIzmeniSifraOglasa, .inputPijacaObrisiNaziv, .inputPijacaIzmeniNaziv, .inputKorisnikNadjiOglaseJMBG, .inputOglasIzmeniBrojSasije, .inputAutomobilDodajBrojSasije, .inputAutomobilIzmeniBrojSasije, .inputNadjiOglas{
+    max-width: 250px;
+} */
+
+.divAutomobilDodajDugme, .divPijacaDodajDugmeDole{
+    display: flex;
+    justify-content: center;
+}
+
+.divKorisnikNadjiOglaseDugme, .divKorisnikNadjiOglaseJMBG, .divOglasObrisiDugme, .divOglasObrisiSifraOglasa, .divOglasIzmeniDugmeDole, .divOglasIzmeniDole, .divOglasIzmeniDugme, .divOglasIzmeniSifraOglasa, .divOglasDodajDugme, .divOglasDodajPijacu, .divOglasDodajBrojSasije, .divOglasDodajJMBGVlasnika, .divPijacaIzmeniNaziv, .divPijacaObrisiNaziv, .divAutomobilIzmeniBrojSasije, .divPijacaIzmeniDugme, .divPijacaObrisiDugme, .divPijacaDodajDugme, .divAutomobilIzmeniDugme1, .divPijacaIzmeniDugmeDole, .divPijacaObrisiDugmeDole, .divPijacaSveDugme, .divAutomobilIzmeniDugme, .divPijacaIzmeniTelefon, .divAutomobilIzmeniKilometraza, .divPijacaIzmeniDugmeDole1, .divAutomobilIzmeniDugmeDole, .divOglasFiltrirajDugme, .divPijacaNadjiNaziv, .divOglasNadjiSifraOglasa, .divPijacaNadjiDugme, .divOglasNadjiBrojSasije, .divOglasNadjiDugme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divAutomobilIzmeniKilometraza, .divPijacaIzmeniTelefon, .divOglasFiltrirajDugme{
+    margin-top: 10px;
+}
+
+.divNoviKorisnik, .divNoviAutomobil, .divNovaPijaca, .divNoviOglas{
+    display: flex;
+    flex-direction: column;
+    padding: 14px 20px;
+    background-image: url("../Slike/PozadinaProzor.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    opacity: 90%;
+    height: fit-content;
+    align-items: center;
+    max-width: 50%;
+}
+
+.divNoviAutomobilBrojSasije{
+    align-content: center;
+}
+
+.divNoviOglas{
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+
+.lblNoviKorisnikEmail{
+    padding: 0px 15px;
+}
+
+.lblKorisnickoIme{
+    display: flex;
+    text-align: center;
+}
+
+.divNovaPijacaTelefon, .divNovaPijacaAdresa, .divNovaPijacaLokacija, .divNovaPijacaNaziv, .divNoviKorisnikJMBG, .divNoviKorisnikUsername, .divNoviKorisnikIme, .divNoviKorisnikPrezime, .divNoviKorisnikGrad, .divNoviKorisnikAdresa, .divNoviKorisnikTelefon, .divNoviKorisnikEmail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+
+
+.divNoviAutomobilPijaca, .divNoviAutomobilJMBGVlasnika, .divNoviAutomobilSnaga, .divNoviAutomobilKubikaza, .divNoviAutomobilGorivo, .divNoviAutomobilKaroserija, .divNoviAutomobilKilometraza, .divNoviAutomobilGodiste, .divNoviAutomobilModel, .divNoviAutomobilMarka, .divNoviAutomobilBrojSasije{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px;
+    
+}
+
+.noviKorisnikSlika, .izaberiSliku{
+    max-width: 100px;
+    max-height: 100px;
+    
+}
+
+.divNoviKorisnikSlika{
+    display: flex;
+    justify-content: center;
+}
+
+.divOglasIzmeniJMBGSifra, .divNoviAutomobilMarkaModel, .divNoviAutomobilGodisteKilometraza, .divNoviAutomobilKaroserijaGorivo, .divNoviAutomobilKubikazaSnaga, .divNoviAutomobilJMBGVlasnikaPijaca{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* @media (min-width: 200px){
+    .divNoviAutomobil{
+        margin:0px;
+        padding: 0px;
+    }
+} */
+
+.divOglasDodajCena, .divNoviAutomobilPijaca, .divNoviAutomobilJMBGVlasnika, .divNoviAutomobilSnaga, .divNoviAutomobilKubikaza, .divNoviAutomobilGorivo, .divNoviAutomobilKaroserija, .divNoviAutomobilKilometraza, .divNoviAutomobilGodiste, .divNoviAutomobilModel, .divNoviAutomobilMarka, .divNoviAutomobilBrojSasije{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lblVlasnikPijaca:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.AdivNoviOglasSifraOglasa, .AdivNoviOglasDatum, .AdivNoviOglasCena, .divNoviOglasMarkaModel, .divNoviOglasGodisteKilometraza, .divNoviOglasKaroserijaGorivo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+[class^="divNoviOglasSifraOglasa"], [class^="divNoviOglasDatum"], [class^="divNoviOglasGodisteKilometraza"], [class^="divNoviOglasCena"] , [class^="divNoviOglasMarkaModel"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+[class^="divNoviOglas"]{
+    display: flex;
+    flex-direction: column;
+    padding: 7px 10px;
+    background-image: url("../Slike/PozadinaProzor.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    opacity: 90%;
+    max-width: 65%;
+    align-items: center;
+    height: fit-content;
+    text-align: center;
+}
+
+[class^="divNovaPijaca"]{
+    display: flex;
+    flex-direction: column;
+    padding: 14px 20px;
+    background-image: url("../Slike/PozadinaProzor.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    opacity: 90%;
+    height: fit-content;
+    align-items: center;
+    text-align: center;
+    max-width: 50%;
+}
+
+[class^="divNoviOglasGorivo"], [class^="divNoviOglasKaroserija"], [class^="divNoviOglasCena"], [class^="divNoviOglasKilometraza"], [class^="divNoviOglasGodiste"], [class^="divNoviOglasMarkaModel"], [class^="divNoviOglasGodisteKilometraza"], [class^="divNoviOglasKaroserijaGorivo"]{
+    margin: 0px;
+    background-image: none;
+
+}
+
+[class^="divNovaPijacaTelefon"], [class^="divNovaPijacaAdresa"], [class^="divNovaPijacaLokacija"], [class^="divNovaPijacaNaziv"]{
+    margin: 0px;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+[class^="divNoviOglasKilometraza"]{
+    padding: 20px;
+} 
+
+.inputPijacaObrisiNaziv, .inputPijacaIzmeniNaziv, .inputOglasDodajCena, .inputKorisnikNadjiOglaseJMBG, .inputNadjiPijacuNaziv, .inputFilterCena, .inputFilterKilometraza, .inputNadjiOglasSifraOglasa, .inputKorisnikDodajJMBG, .inputAutomobilDodajBrojSasije, .inputAutomobilIzmeniBrojSasije, .KilometrazaAutomobilIzmeni, .inputOglasIzmeniSifraOglasa, .inputOglasIzmeniCena, .inputOglasObrisiSifraOglasa{
+    width: 70%;
+}
+
+.divNoviAutomobil{
+    align-items: stretch;
+}
+
+.selectIzmeniPijacu, .selectNadjiPijacuNaziv, .selectNadjiPijacuNazivObrisi{
+    width: 70%;
+}
+
+@media screen and (max-width: 230px){
+    .PrikazLevo{
+        margin-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 180px){
+
+    .izaberiSliku{
+        max-width: 75px;
+        max-height: 75px;
+    }
+    .PrikazDesno{
+        margin-left: 10px;
+    }
+    [class^="divNovaPijaca"], [class^="divNoviOglas"], .divNoviKorisnik, .divNoviAutomobil{
+        margin-left: 0px;
+    }
+
+    .divDugmiciKorisnik, .divDugmiciAutomobil, .divDugmiciOglas, .divDugmiciPijaca{
+        min-width: 80px;
+    }
+    select, option{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 500px){
+    [class^="btn"]{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .divPijacaDodajUsername, .divDodajKorisnikaUsername, .divDodajKorisnikaSifra, .divDodajKorisnikaIme, .divDodajKorisnikaPrezime, .divDodajKorisnikaGrad, .divDodajKorisnikaAdresa, .divDodajKorisnikaTelefon, .divDodajKorisnikaEmail, .divKorisnikIzmeniSifra, .divKorisnikIzmeniUsername, .divKorisnikIzmeniGrad, .divKorisnikIzmeniAdresa, .divKorisnikIzmeniTelefon, .divKorisnikIzmeniEmail, .divKorisnikObrisiJMBG, .divKorisnikObrisiSifra, .divKorisnikZaboravljenaSifraJMBG, .divKorisnikZaboravljenaUsername, .divKorisnikZaboravljenaSifraIme, .divKorisnikZaboravljenaSifraPrezime, .divKorisnikZaboravljenaSifraAdresa, .divKorisnikZaboravljenaSifraGrad, .divKorisnikZaboravljenaSifraTelefon, .divKorisnikZaboravljenaSifraEmail, .divAutomobilDodajMarka, .divAutomobilDodajModel, .divAutomobilDodajGodiste, .divAutomobilDodajKilometraza, .divAutomobilDodajGorivo, .divAutomobilDodajKaroserija, .divAutomobilDodajKubikaza, .divAutomobilDodajSnaga, .divAutomobilDodajJMBGVlasnika, .divAutomobilDodajPijaca, .divAutomobilIzmeniUsername, .divAutomobilIzmeniSifra, .divFilterGodinaOd, .divFilterGodinaDo, .divFilterMarka, .divFilterModel, .divFilterKaroserija, .divFilterGorivo, .divOglasDodajJMBGVlasnika, .divOglasDodajSifra, .divOglasDodajBrojSasije, .divOglasDodajPijacu, .divOglasIzmeniJMBG, .divKOglasIzmeniSifra, .divOglasObrisiJMBG, .divOglasObrisiSifra, .divPijacaDodajSifra, .divPijacaDodajNaziv, .divPijacaDodajAdresa, .divPijacaDodajLokacija, .divPijacaDodajTelefon, .divPijacaIzmeniUsername, .divPijacaIzmeniSifra, .divPijacaSveUsername, .divPijacaSveSifra, .divPijacaObrisiUsername, .divPijacaObrisiSifra{
+        min-width: 100px;
+    }
+    .lblPrikazLevoNaslov{
+        font-size: 23px;
+    }
+    [class^="btn"]{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .divPijacaDodajUsername, .divDodajKorisnikaUsername, .divDodajKorisnikaSifra, .divDodajKorisnikaIme, .divDodajKorisnikaPrezime, .divDodajKorisnikaGrad, .divDodajKorisnikaAdresa, .divDodajKorisnikaTelefon, .divDodajKorisnikaEmail, .divKorisnikIzmeniSifra, .divKorisnikIzmeniUsername, .divKorisnikIzmeniGrad, .divKorisnikIzmeniAdresa, .divKorisnikIzmeniTelefon, .divKorisnikIzmeniEmail, .divKorisnikObrisiJMBG, .divKorisnikObrisiSifra, .divKorisnikZaboravljenaSifraJMBG, .divKorisnikZaboravljenaUsername, .divKorisnikZaboravljenaSifraIme, .divKorisnikZaboravljenaSifraPrezime, .divKorisnikZaboravljenaSifraAdresa, .divKorisnikZaboravljenaSifraGrad, .divKorisnikZaboravljenaSifraTelefon, .divKorisnikZaboravljenaSifraEmail, .divAutomobilDodajMarka, .divAutomobilDodajModel, .divAutomobilDodajGodiste, .divAutomobilDodajKilometraza, .divAutomobilDodajGorivo, .divAutomobilDodajKaroserija, .divAutomobilDodajKubikaza, .divAutomobilDodajSnaga, .divAutomobilDodajJMBGVlasnika, .divAutomobilDodajPijaca, .divAutomobilIzmeniUsername, .divAutomobilIzmeniSifra, .divFilterGodinaOd, .divFilterGodinaDo, .divFilterMarka, .divFilterModel, .divFilterKaroserija, .divFilterGorivo, .divOglasDodajJMBGVlasnika, .divOglasDodajSifra, .divOglasDodajBrojSasije, .divOglasDodajPijacu, .divOglasIzmeniJMBG, .divKOglasIzmeniSifra, .divOglasObrisiJMBG, .divOglasObrisiSifra, .divPijacaDodajSifra, .divPijacaDodajNaziv, .divPijacaDodajAdresa, .divPijacaDodajLokacija, .divPijacaDodajTelefon, .divPijacaIzmeniUsername, .divPijacaIzmeniSifra, .divPijacaSveUsername, .divPijacaSveSifra, .divPijacaObrisiUsername, .divPijacaObrisiSifra{
+        min-width: 75px;
+    }
+    .lblPrikazLevoNaslov{
+        font-size: 20px;
+    }
+    [class^="btn"]{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 200px){
+    .divPijacaDodajUsername, .divDodajKorisnikaUsername, .divDodajKorisnikaSifra, .divDodajKorisnikaIme, .divDodajKorisnikaPrezime, .divDodajKorisnikaGrad, .divDodajKorisnikaAdresa, .divDodajKorisnikaTelefon, .divDodajKorisnikaEmail, .divKorisnikIzmeniSifra, .divKorisnikIzmeniUsername, .divKorisnikIzmeniGrad, .divKorisnikIzmeniAdresa, .divKorisnikIzmeniTelefon, .divKorisnikIzmeniEmail, .divKorisnikObrisiJMBG, .divKorisnikObrisiSifra, .divKorisnikZaboravljenaSifraJMBG, .divKorisnikZaboravljenaUsername, .divKorisnikZaboravljenaSifraIme, .divKorisnikZaboravljenaSifraPrezime, .divKorisnikZaboravljenaSifraAdresa, .divKorisnikZaboravljenaSifraGrad, .divKorisnikZaboravljenaSifraTelefon, .divKorisnikZaboravljenaSifraEmail, .divAutomobilDodajMarka, .divAutomobilDodajModel, .divAutomobilDodajGodiste, .divAutomobilDodajKilometraza, .divAutomobilDodajGorivo, .divAutomobilDodajKaroserija, .divAutomobilDodajKubikaza, .divAutomobilDodajSnaga, .divAutomobilDodajJMBGVlasnika, .divAutomobilDodajPijaca, .divAutomobilIzmeniUsername, .divAutomobilIzmeniSifra, .divFilterGodinaOd, .divFilterGodinaDo, .divFilterMarka, .divFilterModel, .divFilterKaroserija, .divFilterGorivo, .divOglasDodajJMBGVlasnika, .divOglasDodajSifra, .divOglasDodajBrojSasije, .divOglasDodajPijacu, .divOglasIzmeniJMBG, .divKOglasIzmeniSifra, .divOglasObrisiJMBG, .divOglasObrisiSifra, .divPijacaDodajSifra, .divPijacaDodajNaziv, .divPijacaDodajAdresa, .divPijacaDodajLokacija, .divPijacaDodajTelefon, .divPijacaIzmeniUsername, .divPijacaIzmeniSifra, .divPijacaSveUsername, .divPijacaSveSifra, .divPijacaObrisiUsername, .divPijacaObrisiSifra{
+        min-width: 50px;
+    }
+    .lblPrikazLevoNaslov{
+        font-size: 18px;
+    }
+    [class^="btn"]{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 100px){
+    .izaberiSliku{
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .lblPrikazLevoNaslov{
+        font-size: 15px;
+    }
+    [class^="btn"]{
+        font-size: 8px;
+    }
+    label{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .slikaGoreLevo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .divHederVreme{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .PrikazLevo{
+        max-width: 100%;
+    }
+    .PrikazDesno{
+        max-width: 100%;
+    }
+    [class^="divNoviOglas"] label, .PrikazLevo label:not(.lblPrikazLevoNaslov){
+        font-size: larger;
+    }
+    .lblPrikazLevoNaslov{
+        font-size: 30px;
+    }
+}
+/* label{
+    word-wrap: break-word;
+} */
